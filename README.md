@@ -2,6 +2,57 @@
 Air Cargo is an aviation company that provides air transportation services for passengers and freight. 
 Air Cargo uses its aircraft to provide different services with the help of partnerships or alliances with other airlines. 
 The company wants to prepare reports on regular passengers, busiest routes, ticket sales details, and other scenarios to improve the ease of travel and booking for customers.
+
+Dataset description:
+
+Customer: Contains the information of customers
+
+customer_id – ID of the customer
+first_name – First name of the customer
+last_name – Last name of the customer
+date_of_birth – Date of birth of the customer
+gender – Gender of the customer
+ 
+
+passengers_on_flights: Contains information about the travel details
+
+aircraft_id – ID of each aircraft in a brand
+route_id – Route ID of from and to location
+customer_id – ID of the customer
+depart – Departure place from the airport
+arrival – Arrival place in the airport
+seat_num – Unique seat number for each passenger
+class_id – ID of travel class
+travel_date – Travel date of each passenger
+flight_num – Specific flight number for each route
+ 
+
+ 
+
+ticket_details: Contains information about the ticket details
+
+p_date – Ticket purchase date
+customer_id – ID of the customer
+aircraft_id – ID of each aircraft in a brand
+class_id – ID of travel class
+no_of_tickets – Number of tickets purchased
+a_code – Code of each airport
+price_per_ticket – Price of a ticket
+brand – Aviation service provider for each aircraft
+ 
+
+routes: Contains information about the route details
+
+Route_id – Route ID of from and to location
+Flight_num – Specific fight number for each route
+Origin_airport – Departure location
+Destination_airport – Arrival location
+Aircraft_id – ID of each aircraft in a brand
+Distance_miles – Distance between departure and arrival location
+ 
+
+Following operations should be performed:
+
 Create an ER diagram for the given airlines database.
 Write a query to create route_details table using suitable data types for the fields, such as route_id, flight_num, origin_airport, destination_airport, aircraft_id, and distance_miles. Implement the check constraint for the flight number and unique constraint for the route_id fields. Also, make sure that the distance miles field is greater than 0.
 Write a query to display all the passengers (customers) who have travelled in routes 01 to 25. Take data  from the passengers_on_flights table.
